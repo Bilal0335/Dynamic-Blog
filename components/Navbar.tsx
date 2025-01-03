@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
@@ -18,13 +19,32 @@ const Navbar = () => {
             >
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
             </svg>
-            <span className="ml-3 text-xl">Blogify</span>
+            <span className="ml-3 text-xl">
+              <Link href={"/"}>Blogify</Link>
+            </span>
           </a>
           <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-            <a className="mr-5 hover:text-gray-900 cursor-pointer">Home</a>
-            <a className="mr-5 hover:text-gray-900 cursor-pointer" href={"/about"}>About</a>
-            <a className="mr-5 hover:text-gray-900 cursor-pointer" href={"/blog"}>Blog</a>
-            <a className="mr-5 hover:text-gray-900 cursor-pointer" href={"/contact"}>Contact</a>
+            <a className="mr-5 hover:text-gray-900 cursor-pointer" href={"/"}>
+              Home
+            </a>
+            <a
+              className="mr-5 hover:text-gray-900 cursor-pointer"
+              href={"/about"}
+            >
+              About
+            </a>
+            <a
+              className="mr-5 hover:text-gray-900 cursor-pointer"
+              href={"/blog"}
+            >
+              Blog
+            </a>
+            <a
+              className="mr-5 hover:text-gray-900 cursor-pointer"
+              href={"/contact"}
+            >
+              Contact
+            </a>
           </nav>
           <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
             Register
