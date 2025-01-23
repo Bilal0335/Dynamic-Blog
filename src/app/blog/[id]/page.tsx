@@ -1,5 +1,6 @@
 import Link from "next/link";
 import CommentSection from "../../../../components/CommentSection";
+import Image from "next/image";
 
 type Post = {
   id: number;
@@ -64,7 +65,7 @@ export default function BlogDetail({ params }: { params: { id: string } }) {
       <p className="text-sm text-gray-500 mb-5">
         {post.category} | {post.date} | {post.author}
       </p>
-      <img
+      <Image
         src={post.image}
         alt={post.title}
         className="rounded-lg w-full mb-5"

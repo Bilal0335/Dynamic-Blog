@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const Blog = () => {
@@ -40,7 +41,7 @@ const Blog = () => {
               <div className="p-4 md:w-1/3" key={post.id}>
                 <Link href={`/blog/${post.id}`}>
                   <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden cursor-pointer">
-                    <img
+                    <Image
                       className="lg:h-48 md:h-36 w-full object-cover object-center"
                       src={post.image}
                       alt={post.title}

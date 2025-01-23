@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -28,7 +29,7 @@ export default function Home() {
           <div className="flex flex-wrap -m-4">
             <div className="p-4 md:w-1/3">
               <div className="border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img
+                <Image
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
                   src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Tech Article"
@@ -50,7 +51,7 @@ export default function Home() {
             </div>
             <div className="p-4 md:w-1/3">
               <div className="border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img
+                <Image
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
                   src="https://media.istockphoto.com/id/1494642262/photo/people-in-the-cinema-auditorium-with-empty-white-screen.webp?a=1&b=1&s=612x612&w=0&k=20&c=Q9NOP_pk04R_EVWtlVBZI75eSrXwYY_oz0wuk04rO7M="
                   alt="Cinema Article"
@@ -72,7 +73,7 @@ export default function Home() {
             </div>
             <div className="p-4 md:w-1/3">
               <div className="border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img
+                <Image
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
                   src="https://images.unsplash.com/photo-1605882171181-e31b036e4ceb?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3BhY2VzfGVufDB8fDB8fHww"
                   alt="Astronomy Article"
