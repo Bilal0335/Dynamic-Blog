@@ -68,14 +68,14 @@ export default function BlogDetail({ params }: { params: { id: string } }) {
       <Image
         src={post.image}
         alt={post.title}
+        width={1170}  
+        height={780}
         className="rounded-lg w-full mb-5"
       />
       <p>{post.content}</p>
-      <button // Navigates back to the blog list page
-        className="mt-5 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-      >
-        <Link href={"/blog"}>Back to Blog</Link>
-      </button>
+      <Link href="/blog" className="mt-5 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 inline-block">
+        Back to Blog
+      </Link>
       <CommentSection />
     </div>
   );

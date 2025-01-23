@@ -10,7 +10,9 @@ const Blog = () => {
       description:
         "Exploring the latest in technology and its effects on our world. Innovations that change how we live.",
       image:
-        "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      width: 1170,
+      height: 780, 
     },
     {
       id: 2,
@@ -19,7 +21,9 @@ const Blog = () => {
       description:
         "A deep dive into iconic films and their cultural impact. A closer look at timeless cinematic pieces.",
       image:
-        "https://media.istockphoto.com/id/1494642262/photo/people-in-the-cinema-auditorium-with-empty-white-screen.webp?a=1&b=1&s=612x612&w=0&k=20&c=Q9NOP_pk04R_EVWtlVBZI75eSrXwYY_oz0wuk04rO7M="
+        "https://media.istockphoto.com/id/1494642262/photo/people-in-the-cinema-auditorium-with-empty-white-screen.webp?a=1&b=1&s=612x612&w=0&k=20&c=Q9NOP_pk04R_EVWtlVBZI75eSrXwYY_oz0wuk04rO7M=",
+      width: 612,
+      height: 612, 
     },
     {
       id: 3,
@@ -28,7 +32,9 @@ const Blog = () => {
       description:
         "An exploration of the night sky and the stars that light up our universe. Discover the wonders above.",
       image:
-        "https://images.unsplash.com/photo-1605882171181-e31b036e4ceb?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3BhY2VzfGVufDB8fDB8fHww"
+        "https://images.unsplash.com/photo-1605882171181-e31b036e4ceb?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3BhY2VzfGVufDB8fDB8fHww",
+      width: 400,
+      height: 300, 
     }
   ];
 
@@ -45,6 +51,8 @@ const Blog = () => {
                       className="lg:h-48 md:h-36 w-full object-cover object-center"
                       src={post.image}
                       alt={post.title}
+                      width={post.width} 
+                      height={post.height}  
                     />
                     <div className="p-6">
                       <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">

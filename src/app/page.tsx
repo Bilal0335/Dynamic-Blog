@@ -33,6 +33,8 @@ export default function Home() {
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
                   src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Tech Article"
+                  width={1170} 
+                  height={780} 
                 />
                 <div className="p-6">
                   <h2 className="text-lg font-medium text-gray-900 mb-2">
@@ -55,6 +57,8 @@ export default function Home() {
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
                   src="https://media.istockphoto.com/id/1494642262/photo/people-in-the-cinema-auditorium-with-empty-white-screen.webp?a=1&b=1&s=612x612&w=0&k=20&c=Q9NOP_pk04R_EVWtlVBZI75eSrXwYY_oz0wuk04rO7M="
                   alt="Cinema Article"
+                  width={612} 
+                  height={612} 
                 />
                 <div className="p-6">
                   <h2 className="text-lg font-medium text-gray-900 mb-2">
@@ -77,6 +81,8 @@ export default function Home() {
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
                   src="https://images.unsplash.com/photo-1605882171181-e31b036e4ceb?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3BhY2VzfGVufDB8fDB8fHww"
                   alt="Astronomy Article"
+                  width={400} 
+                  height={267} 
                 />
                 <div className="p-6">
                   <h2 className="text-lg font-medium text-gray-900 mb-2">
